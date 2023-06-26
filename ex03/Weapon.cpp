@@ -1,6 +1,6 @@
 #include "Weapon.hpp"
 
-const std::string	Weapon::getType( void )
+const std::string&	Weapon::getType( void )
 {
 	return (type);
 }
@@ -10,7 +10,7 @@ void	Weapon::setType( std::string newType )
 	type.clear();
 	if (newType.empty())
 	{
-		std::cerr << "Erro\nType string is empty" << std::endl;
+		std::cerr << "Error\nType string is empty" << std::endl;
 		return ;
 	}
 	type = newType;

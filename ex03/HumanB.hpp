@@ -11,10 +11,10 @@ class HumanB
 
 public:
 
-	const Weapon		*getWeapon( void );
-	const std::string	getName( void );
-	void				setWeapon( Weapon &newWeapon );
-	void				setName( std::string& newName );
+	Weapon		*getWeapon( void ) const;
+	std::string	getName( void ) const;
+	void		setWeapon( Weapon &newWeapon );
+	void		setName( const std::string& newName );
 
 	HumanB(void);
 	HumanB(std::string newName);

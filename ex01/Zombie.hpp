@@ -7,8 +7,8 @@ class Zombie
 {
 public:
 
-	const std::string	getName( void );
-	void				setName( std::string name );
+	std::string	getName( void ) const;
+	void		setName( const std::string& name );
 
 	Zombie( void );
 	Zombie( std::string name);

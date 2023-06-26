@@ -1,21 +1,21 @@
 #include "HumanA.hpp"
 
-const Weapon	HumanA::getWeapon( void )
+Weapon	HumanA::getWeapon( void ) const
 {
 	return (weapon);
 }
 
-const std::string	HumanA::getName( void )
+std::string	HumanA::getName( void ) const
 {
 	return (name);
 }
 
-void    HumanA::setWeapon( Weapon& newWeapon )
+void    HumanA::setWeapon(const Weapon& newWeapon )
 {
 	weapon = newWeapon;
 }
 
-void	HumanA::setName( std::string& newName )
+void	HumanA::setName( const std::string& newName )
 {
 	name = newName;
 }
