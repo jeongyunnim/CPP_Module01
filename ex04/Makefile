@@ -14,11 +14,11 @@ RM			=	rm -f
 
 all:	$(NAME)
 
-$(NAME): $(OBJS)
+$(NAME): $(OBJS) $(INCS)
 	$(CXX) $(CXXFLAGS) -o $@ $(OBJS)
 
-%o:	%.c $(INCS)
-	$(CXX) $(CXXFLAGS) $(INCS) -c $^ -o $@
+%o:	%.cpp $(INCS)
+	$(CXX) $(CXXFLAGS) $(INCS) -c $< -o $@
 
 clean: 
 	$(RM) $(OBJS)
